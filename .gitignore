@@ -1,0 +1,47 @@
+# IDE
+.idea
+.vscode
+
+# Byte file/compiled/DLL
+__pycache__
+*.pyc
+.swp
+
+# Pipenv
+Pipfile.lock
+Pipfile
+
+# pyenv
+.python-version
+
+# Testing
+.pytest_cache
+pytest.ini
+
+# Environments
+.env
+env
+venv
+
+# Terraform
+lambda_zip
+lambda-zip
+.terraform*
+.terraform.tfstate.lock.info
+*.tfstate
+*.tfstate.backup
+layer.zip
+
+# Build artifacts
+reports
+*.egg-info
+.m2a-build
+docs/build
+error_schema.log
+
+#local stack setting
+local
+crash.log
+/terraform/local_test/errored.tfstate
+/terraform/local_test/local_test.tf
+provider.tf

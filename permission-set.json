@@ -1,0 +1,51 @@
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "sns:*"
+            ],
+            "Resource": "arn:aws:sns:eu-west-1:*:*-sns-topic"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:*"
+            ],
+            "Resource": "arn:aws:iam::*:role/*_chatbot_role"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudformation:*"
+            ],
+            "Resource": "arn:aws:cloudformation:eu-west-1:*:stack/*-slack/*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "chatbot:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Action": [
+                "autoscaling:Describe*",
+                "cloudwatch:Describe*",
+                "cloudwatch:Get*",
+                "cloudwatch:List*",
+                "logs:Get*",
+                "logs:List*",
+                "logs:StartQuery",
+                "logs:StopQuery",
+                "logs:Describe*",
+                "logs:TestMetricFilter",
+                "logs:FilterLogEvents",
+                "sns:Get*",
+                "sns:List*"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
