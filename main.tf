@@ -3,7 +3,7 @@ locals {
 }
 
 data "local_file" "cloudformation_template" {
-  filename = "./cloudformation.yml"
+  filename = file("${path.module}/cloudformation.yml")
 }
 
 resource "aws_cloudformation_stack" "chatbot_slack_configuration" {
